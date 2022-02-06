@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 import { Container as MuiContainer, Stack, Divider, Box } from "@mui/material";
+import { FormikMui } from "./components/FormikMui";
 
 const Container = () => {
   return (
@@ -13,7 +14,7 @@ const Container = () => {
         divider={<Divider orientation="vertical" flexItem />}
         spacing={2}
       >
-        <Link to="todo">TODO</Link>
+        <Link to="fomik-mui">Formik Mui</Link>
       </Stack>
       <Box mt={2}>
         <Outlet />
@@ -27,7 +28,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Container />}>
-          <Route index element={<>TODO</>} />
+          <Route path="fomik-mui" element={<FormikMui />} />
+          <Route index element={<FormikMui />} />
         </Route>
       </Routes>
     </BrowserRouter>
