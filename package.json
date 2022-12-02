@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.6.0",
+    "@emotion/styled": "^11.10.5",
     "@hookform/resolvers": "^2.8.8",
     "@mui/material": "^5.10.13",
     "@testing-library/jest-dom": "^5.14.1",
